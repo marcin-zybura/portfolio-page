@@ -1,20 +1,84 @@
-<section class="skills">
-    <div class="skill skill-html">
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../style/css/style.css">
+    <title>Portfolio</title>
+  </head>
 
-    </div>
-    <div class="skill skill-css">
+  <body>
+    <div class="main-container">
+            <header class="header">
+                <nav class="navigation">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img class="logo-image" src="../images/logo_mz_red.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="navigation-panel">
+                        <div class="hamburger-menu">
+                            <div class="hamburger-container" onclick="changeHamburger(this)">
+                                <div class="bar1"></div>
+                                <div class="bar2"></div>
+                                <div class="bar3"></div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <nav class="navigation-mobile">
+                    <!-- Tutaj rozwijane menu -->
+                </nav>
+            </header>
 
+            <div class="main-content sticky-padding">
+                <section class="site-content">
+                    <section class="skills main">
+                        <h2 class="title">Technologie, których używam w swoich projektach</h2>
+                        <div class="skill skill-html">
+                            <img src="../images/icons/html5-plain-wordmark.svg" alt="html_img">
+                        </div>
+                        <div class="skill skill-css">
+                            <img src="../images/icons/css3-plain-wordmark.svg" alt="css_img">
+                        </div>
+                        <div class="skill skill-javascript">
+                            <img src="../images/icons/javascript-plain.svg" alt="js_img">
+                        </div>
+                        <div class="skill skill-jquery">
+                            <img src="../images/icons/jquery-plain-wordmark.svg" alt="jquery_img">
+                        </div>
+                        <div class="skill skill-sass">
+                            <img src="../images/icons/sass-original.svg" alt="sass_img">
+                        </div>
+                        <div class="skill skill-gulp">
+                            <img src="../images/icons/gulp-plain.svg" alt="gulp_img">
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <footer class="footer">
+                <div class="media">
+                  <a href="#">
+                      <i class="fas fa-envelope"></i>
+                  </a>
+                  <a href="#">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+                  <a href="#">
+                      <i class="fab fa-github"></i>
+                  </a>
+                </div>
+                <p class="copyrights">&copy; 2017 MARCIN ŻYBURA ALL RIGHTS RESERVED</p>
+            </footer>
     </div>
-    <div class="skill skill-javascript">
 
-    </div>
-    <div class="skill skill-jquery">
-
-    </div>
-    <div class="skill skill-sass">
-
-    </div>
-    <div class="skill skill-gulp">
-
-    </div>
-</section>
+  <script src="../js/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      function changeHamburger(x) {
+          x.classList.toggle("change");
+      }
+  </script>
+  <script src="../js/skills.js" type="text/javascript"></script>
+  </body>
+</html>

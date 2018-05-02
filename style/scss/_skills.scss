@@ -1,0 +1,18 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill {
+    align-items: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    height: 230px;
+    width: 100%;
+
+    svg {
+        transform: scale(0.7);
+        width: 100%;
+    }
+}

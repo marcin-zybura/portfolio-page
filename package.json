@@ -15,5 +15,8 @@
     "gulp-plumber": "^1.2.0",
     "gulp-sass": "^3.2.1",
     "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "jquery-pjax": "^2.0.1"
   }
 }

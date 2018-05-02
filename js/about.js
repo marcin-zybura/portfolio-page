@@ -1,11 +1,11 @@
-function hideHeaderContent() {
+function removeHeaderContent() {
     var headerContent = $(".header-content");
-    headerContent.hide();
+    headerContent.remove();
 }
 
-function hideSiteNav() {
+function removeSiteNav() {
     var siteNav = $(".mobile-site-nav");
-    siteNav.hide();
+    siteNav.remove();
 }
 
 function setAutoHeaderHeight() {
@@ -13,25 +13,10 @@ function setAutoHeaderHeight() {
     header.css("height", "auto");
 }
 
-function ajaxNavigationHide() {
-    hideHeaderContent();
-    hideSiteNav();
+function ajaxNavigationSwitch() {
+    removeHeaderContent();
+    removeSiteNav();
     setAutoHeaderHeight();
-}
-
-function showHeaderContent() {
-    var headerContent = $(".header-content");
-    headerContent.show();
-}
-
-function showSiteNav() {
-    var siteNav = $(".mobile-site-nav");
-    siteNav.show();
-}
-
-function ajaxNavigationShow() {
-    showHeaderContent();
-    showSiteNav();
 }
 
 $(function() {

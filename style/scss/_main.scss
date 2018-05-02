@@ -1,34 +1,36 @@
 .mobile-site-nav {
-    .about {
+    .nav-about {
         // background-image: url("../../images/about.jpeg");
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../images/about.jpeg");
+        border-top: 2px solid #FFF;
     }
 
-    .skills{
+    .nav-skills{
         // background-image: url("../../images/skills.jpeg");
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../images/skills.jpeg");
     }
 
-    .experience {
+    .nav-experience {
         // background-image: url("../../images/experience.jpeg");
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../images/experience.jpeg");
     }
 
-    .portfolio {
+    .nav-portfolio {
         // background-image: url("../../images/portfolio.jpeg");
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../images/portfolio.jpeg");
     }
 
-    .contact {
+    .nav-contact {
         // background-image: url("../../images/contact.jpeg");
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../images/contact.jpeg");
+        border-bottom: 2px solid #FFF;
     }
 
-    .about,
-    .skills,
-    .experience,
-    .portfolio,
-    .contact {
+    .nav-about,
+    .nav-skills,
+    .nav-experience,
+    .nav-portfolio,
+    .nav-contact {
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -63,4 +65,8 @@
 
 .site-nav__text {
     color: #FFF;
+}
+
+.sticky-padding {
+    padding-top: $header-height;
 }
