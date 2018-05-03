@@ -1,16 +1,16 @@
 $(function() {
-    $(".logo-link").on("click", function() {
+    $(".logo-link").on("click", function(e) {
+        e.preventDefault();
         ajaxNavigationShow();
         $(".site-content").empty();
-        return false;
     });
 
-    $(".mobile-site-nav a").on("click", function() {
+    $(".mobile-site-nav a, .navigation-mobile a").on("click", function(e) {
+        e.preventDefault();
         ajaxNavigationHide();
         var page = $(this).attr("href");
         console.log(page);
         $(".site-content").load(`${page} .main`);
-        return false;
     });
 
 });
