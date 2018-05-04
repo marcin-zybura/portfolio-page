@@ -1,12 +1,18 @@
 $(function() {
     $(".logo-link").on("click", function(e) {
         e.preventDefault();
+        $(".hamburger-container").removeClass("change");
+        $(".navigation-mobile").slideUp();
+        $(".header-background-image").show();
         ajaxNavigationShow();
         $(".site-content").empty();
     });
 
     $(".mobile-site-nav a, .navigation-mobile a").on("click", function(e) {
         e.preventDefault();
+        $(".hamburger-container").removeClass("change");
+        $(".navigation-mobile").slideUp();
+        $(".header-background-image").hide();
         ajaxNavigationHide();
         var page = $(this).attr("href");
         console.log(page);
