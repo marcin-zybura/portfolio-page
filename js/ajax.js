@@ -1,6 +1,7 @@
 $(function() {
     $(".logo-link").on("click", function(e) {
         e.preventDefault();
+        window.scrollTo(0,0);
         $(".hamburger-container").removeClass("change");
         $(".navigation-mobile").slideUp();
         $(".header-background-image").show();
@@ -10,6 +11,7 @@ $(function() {
 
     $(".mobile-site-nav a, .navigation-mobile a").on("click", function(e) {
         e.preventDefault();
+        window.scrollTo(0,0);
         $(".hamburger-container").removeClass("change");
         $(".navigation-mobile").slideUp();
         $(".header-background-image").hide();
