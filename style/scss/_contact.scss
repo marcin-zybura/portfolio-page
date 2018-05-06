@@ -1,0 +1,38 @@
+.contact-container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact-form {
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.form-input {
+    border: none;
+    border-radius: 2px;
+    color: #333;
+    display: block;
+    font-size: 14px;;
+    height: 45px;
+    line-height: 20px;
+    margin: 0 auto;
+    outline: none;
+    padding-left: 10px;
+    width: 100%;
+}
+
+.input-message {
+    height: 150px;
+    padding-top: 10px;
+    resize: none;
+    width: 100%;
+}

@@ -1,0 +1,17 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-button {
+    background-color: #F4474A;
+    border: none;
+    border-radius: 2px;
+    color: #FFF;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+    width: 150px;
+}
