@@ -6,6 +6,16 @@ $(".hamburger-container").on("click", function(e) {
     e.stopPropagation();
     this.classList.toggle("change");
     $(".navigation-mobile").slideToggle();
+    if ($(this).hasClass("change")) {
+        $(".header").css({
+            'background-color': 'rgba(51, 51, 51, 1)'
+        });
+    }
+    else {
+        $(".header").css({
+            'background-color': 'rgba(51, 51, 51, 0.5)'
+        });
+    }
 });
 // endof HAMBURGER TOGGLE
 
