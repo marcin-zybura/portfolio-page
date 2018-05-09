@@ -1,7 +1,6 @@
 .contact-container {
     margin: 0 auto;
-    overflow: hidden;
-    width: 100%;
+    max-width: 300px;
 }
 
 .contact-form {
@@ -19,6 +18,7 @@
 .form-input {
     border: none;
     border-radius: 2px;
+    box-sizing: border-box;
     color: #333;
     display: block;
     font-size: 14px;;
@@ -26,14 +26,30 @@
     line-height: 20px;
     margin: 0 auto;
     outline: none;
-    text-indent: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
 }
 
 .input-message {
+    box-sizing: border-box;
+    display: block;
     height: 150px;
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     padding-top: 10px;
     resize: none;
     width: 100%;
+}
+
+.not-valid {
+    background-color: #F4474A;
+    border-radius: 15px;
+    color: #FFF;
+    display: none;
+    font-size: 13px;
+    padding: 2px 13px;
+    position: absolute;
+    right: 14px;
+    top: 8px;
 }

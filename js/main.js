@@ -93,3 +93,6 @@ $(function() {
 //     var mainContainerWidth = $(".main-container").width();
 //     $("header").width(mainContainerWidth);
 // });
+
+// startof CONTACT FORM VALIDATION
+// endof CONTACT FORM VALIDATION

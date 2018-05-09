@@ -17,8 +17,49 @@ $(function() {
         $(".header-background-image").hide();
         ajaxNavigationHide();
         var page = $(this).attr("href");
-        console.log(page);
-        $(".site-content").load(`${page} .main`);
+        $(".site-content").load(`${page} .main`, function() {
+            if (page == "web/contact.html") {
+                var name = $("input[name='your-name']");
+                var email = $("input[name='your-email']");
+                var message = $("textarea[name='your-message']");
+
+                $(".contact-form").on("submit", function(e) {
+                    e.preventDefault();
+                    var check = true;
+                    console.log($(this).find(".input-message").next().length);
+                    if($(name).val().trim() == '') {
+                        console.log("gowno");
+                        $(this).find(".your-name .not-valid").text("Uzupełnij pole");
+                        $(this).find(".your-name .not-valid").show();
+                        check=false;
+                    }
+                    if($(email).val().trim() == '') {
+                        console.log("gowno");
+                        $(this).find(".your-email .not-valid").text("Uzupełnij pole");
+                        $(this).find(".your-email .not-valid").show();
+                        check=false;
+                    } else
+                    if($(email).val().trim().match(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) == null) {
+                        console.log("gowno");
+                        $(this).find(".your-email .not-valid").text("Błędny e-mail");
+                        $(this).find(".your-email .not-valid").show();
+                        check=false;
+                    }
+                    if($(message).val().trim() == ''){
+                        console.log("gowno");
+                        $(this).find(".your-message .not-valid").text("Uzupełnij pole");
+                        $(this).find(".your-message .not-valid").show();
+                        check=false;
+                    }
+                    return check;
+                });
+            };
+            $(".form-input").on("keyup", function() {
+                ($(this).next(".not-valid")).text("");
+                ($(this).next(".not-valid")).hide();
+                console.log(this);
+            });
+        });
     });
 
 });
