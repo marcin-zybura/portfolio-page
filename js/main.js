@@ -43,6 +43,11 @@ function hideSiteNav() {
     siteNav.hide();
 }
 
+function hideMainContent() {
+    var mainContent = $(".main-content");
+    mainContent.hide();
+}
+
 function setAutoHeaderHeight() {
     var header = $("header");
     header.css("height", "auto");
@@ -51,6 +56,7 @@ function setAutoHeaderHeight() {
 function ajaxNavigationHide() {
     hideHeaderContent();
     hideSiteNav();
+    hideMainContent();
     setAutoHeaderHeight();
 }
 
@@ -64,9 +70,15 @@ function showSiteNav() {
     siteNav.show();
 }
 
+function showMainContent() {
+    var mainContent = $(".main-content");
+    mainContent.show();
+}
+
 function ajaxNavigationShow() {
     showHeaderContent();
     showSiteNav();
+    showMainContent();
 }
 
 // startof STICKY HEADER

@@ -1,0 +1,41 @@
+@media (min-width: 450px) {
+    .nav-row {
+        border-bottom: 1px solid #FFF;
+        border-top: 1px solid #FFF;
+        flex-direction: row;
+        width: 100%;
+
+        &:first-child {
+            border-top: 2px solid #FFF;
+        }
+
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+
+    .site-nav__link {
+        width: 50%;
+
+        &:nth-child(even) {
+            border-left: 1px solid #FFF;
+        }
+
+        &:nth-child(odd) {
+            border-right: 1px solid #FFF;
+        }
+
+        &:last-child {
+            border-right: 2px solid #FFF;
+        }
+    }
+
+    .link__contact {
+        border-bottom: 2px solid #FFF;
+        transform: translateX(-2px);
+    }
+
+    .site-nav__element {
+        border: 0;
+    }
+}
