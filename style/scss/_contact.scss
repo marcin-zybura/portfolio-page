@@ -36,6 +36,7 @@
 
     &:focus {
         border: 4px solid #F4474A;
+        transition: border 0.1s;
     }
 }
 
