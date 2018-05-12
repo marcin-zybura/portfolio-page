@@ -102,6 +102,9 @@ function ajaxNavigationShow() {
     hideSiteContent();
 }
 
+console.log($("header")[0].offsetTop);
+console.log(window.pageYOffset);
+
 // startof STICKY HEADER
 $(function() {
     function stickyHeader() {
