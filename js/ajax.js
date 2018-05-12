@@ -1,4 +1,5 @@
 $(function() {
+    console.log($(window).width());
     $(".logo-link").on("click", function(e) {
         e.preventDefault();
         window.scrollTo(0,0);
@@ -6,16 +7,24 @@ $(function() {
         $(".navigation-mobile").slideUp();
         $(".header-background-image").show();
         ajaxNavigationShow();
-        $(".site-content").empty();
+        // $(".site-content").empty();
     });
 
     $(".mobile-site-nav a, .navigation-mobile a").on("click", function(e) {
         e.preventDefault();
-        window.scrollTo(0,0);
-        $(".hamburger-container").removeClass("change");
-        $(".navigation-mobile").slideUp();
-        $(".header-background-image").hide();
-        ajaxNavigationHide();
+        if ($(window).width() < 850) {
+            window.scrollTo(0,0);
+            $(".hamburger-container").removeClass("change");
+            $(".navigation-mobile").slideUp();
+            $(".header-background-image").hide();
+            ajaxNavigationHide();
+        }
+        else {
+            hideHeaderContent();
+            showSiteContent();
+        }
+        // hideHeaderContent();
+        // showSiteContent();
         var page = $(this).attr("href");
         $(".site-content").load(`${page} .main`, function() {
             if (page == "web/contact.html") {

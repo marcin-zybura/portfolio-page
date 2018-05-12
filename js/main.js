@@ -37,6 +37,10 @@ function hideHeaderContent() {
     var headerContent = $(".header-content");
     headerContent.hide();
 }
+function clearHeaderContent() {
+    var headerContent = $(".header-content");
+    headerContent.empty();
+}
 
 function hideSiteNav() {
     var siteNav = $(".mobile-site-nav");
@@ -53,11 +57,19 @@ function setAutoHeaderHeight() {
     header.css("height", "auto");
 }
 
-function ajaxNavigationHide() {
-    hideHeaderContent();
-    hideSiteNav();
-    hideMainContent();
-    setAutoHeaderHeight();
+function showSiteContent() {
+    var siteContent = $(".site-content");
+    siteContent.show();
+}
+
+function hideSiteContent() {
+    var siteContent = $(".site-content");
+    siteContent.hide();
+}
+
+function updateSiteContent() {
+    var siteContent = $(".site-content");
+    siteContent.empty();
 }
 
 function showHeaderContent() {
@@ -75,10 +87,19 @@ function showMainContent() {
     mainContent.show();
 }
 
+function ajaxNavigationHide() {
+    hideHeaderContent();
+    showSiteContent();
+    hideSiteNav();
+    // hideMainContent();
+    setAutoHeaderHeight();
+}
+
 function ajaxNavigationShow() {
     showHeaderContent();
     showSiteNav();
-    showMainContent();
+    // showMainContent();
+    hideSiteContent();
 }
 
 // startof STICKY HEADER
