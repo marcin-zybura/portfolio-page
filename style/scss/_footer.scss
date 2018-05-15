@@ -5,11 +5,12 @@
     flex-direction: column;
     height: 80px;
     justify-content: center;
-    margin-top: auto;
+    // margin-top: auto;
+    z-index: 1;
 }
 
 .media {
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 
     i {
         color: #FFF;
