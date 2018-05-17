@@ -27,6 +27,7 @@ $(function() {
         // showSiteContent();
         var page = $(this).attr("href");
         $(".site-content").load(`${page} .main`, function() {
+
             if (page == "web/contact.html") {
                 var name = $("input[name='your-name']");
                 var email = $("input[name='your-email']");

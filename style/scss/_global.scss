@@ -58,6 +58,7 @@ a {
 
 body {
 	// min-height: 100vh;
+	// overflow: hidden;
 }
 
 .main-container {
@@ -91,7 +92,7 @@ body {
 	// height: calc(100vh - #{$footer-height});
 	// height: 100vh;
 	// min-height: 100vh;
-	z-index: 0;
+	// z-index: 0;
 }
 
 .site-content {
@@ -102,28 +103,28 @@ body {
 	// background-size: cover;
 	display: none;
 	// height: 100%;
-	height: calc(100vh - #{$header-height} - #{$footer-height});
+	// height: calc(100vh - #{$header-height} - #{$footer-height});
 	// padding: 0 30px 0 30px;
-	overflow: auto;
+	overflow-y: hidden;
 	padding-top: $header-height;
 	position: relative;
 	width: 100%;
-	z-index: 0;
+	// z-index: 0;
 
-	&:after {
-		background-attachment: fixed;
-		background-image: url("../../images/background.jpeg");
-		background-position: center center;
-		background-size: cover;
-		content: "";
-		height: 100%;
-		left: 0;
-		opacity: 0.15;
-		position: absolute;
-		top: 0;
-		width: 100%;
-		z-index: 99;
-	}
+	// &:after {
+	// 	background-attachment: fixed;
+	// 	background-image: url("../../images/background.jpeg");
+	// 	background-position: center center;
+	// 	background-size: cover;
+	// 	content: "";
+	// 	height: 10000px;
+	// 	left: 0;
+	// 	opacity: 0.15;
+	// 	position: absolute;
+	// 	top: 0;
+	// 	width: 100%;
+	// 	z-index: 99;
+	// }
 }
 
 .title {
@@ -133,8 +134,8 @@ body {
 }
 
 .main {
-	// margin-left: 30px;
-	// margin-right: 30px;
+	margin-left: 15px;
+	margin-right: 15px;
 	padding-bottom: 30px;
 	padding-top: 20px;
 }
@@ -155,34 +156,36 @@ body {
     background: #555;
 }
 
-.overlay {
-	background-color: #000;
-	height: 100%;
-	left: 0;
-	opacity: 0.7;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: -1;
-}
+// .overlay {
+// 	background-color: #000;
+// 	height: 100%;
+// 	left: 0;
+// 	opacity: 0.7;
+// 	position: absolute;
+// 	top: 0;
+// 	width: 100%;
+// 	z-index: -1;
+// }
 
-.overlay-desktop {
-	background-color: #000;
-	height: calc(100vh - #{$footer-height});
-	left: 0;
-	opacity: 0.7;
-	position: absolute;
-	top: 0;
-	width: 60%;
-	z-index: 0;
-}
+// .overlay-desktop {
+// 	background-color: #000;
+// 	height: calc(100vh - #{$footer-height});
+// 	left: 0;
+// 	opacity: 0.7;
+// 	position: absolute;
+// 	top: 0;
+// 	width: 60%;
+// 	z-index: 0;
+// }
 
 .bg-container {
-	align-items: center;
-	display: flex;
-	height: 100%;
-	justify-content: center;
-	position: absolute;
+	// align-items: center;
+	// display: flex;
+	// height: 100%;
+	// justify-content: center;
+	// position: absolute;
+	// width: 100%;
+	// z-index: 999;
+	background-image: url("../../images/background_o-07.jpeg");
 	width: 100%;
-	z-index: 999;
 }

@@ -1,5 +1,5 @@
 .skills-container {
-    z-index: 1;
+    // z-index: 1;
 }
 
 .skills {
@@ -31,4 +31,8 @@
 .skill-text {
     font-weight: bold;
     margin-top: 15px;
+}
+
+.skill-ajax {
+    border-bottom: 0;
 }

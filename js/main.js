@@ -59,7 +59,11 @@ function setAutoHeaderHeight() {
 
 function showSiteContent() {
     var siteContent = $(".site-content");
-    siteContent.show();
+    // siteContent.show();
+    siteContent.css({
+        "display": "flex",
+        "justify-content": "center"
+    });
 }
 
 function hideSiteContent() {
