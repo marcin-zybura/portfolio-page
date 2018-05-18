@@ -7,7 +7,6 @@ $(function() {
         $(".navigation-mobile").slideUp();
         $(".header-background-image").show();
         ajaxNavigationShow();
-        // $(".site-content").empty();
     });
 
     $(".mobile-site-nav a, .navigation-mobile a").on("click", function(e) {
@@ -23,8 +22,6 @@ $(function() {
             hideHeaderContent();
             showSiteContent();
         }
-        // hideHeaderContent();
-        // showSiteContent();
         var page = $(this).attr("href");
         $(".site-content").load(`${page} .main`, function() {
 
@@ -69,17 +66,3 @@ $(function() {
     });
 
 });
-
-// $(window).on("popstate", function(e) {
-//     console.log("popstate fired");
-//     // updateContent(e.state);
-//     console.log(window.location.pathname);
-//
-//     if (window.location.pathname == "/") {
-//         console.log("test");
-//         $(".main-container").empty();
-//         $(".main-container").load("../index.html header, .main-content", function() {
-//
-//         });
-//     }
-// });
